@@ -1,0 +1,370 @@
+{
+  "trace": "04_detectar_inconsistencias",
+  "title": "Detectar inconsistencias en el CV",
+  "events": [
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.123815+00:00",
+      "duration_ms": 99,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI02_Mateo_Cede_o"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.223998+00:00",
+      "duration_ms": 97,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI02_Mateo_Cede_o",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI03_Camila_Torres"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.322147+00:00",
+      "duration_ms": 83,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI03_Camila_Torres",
+        "issues": [
+          "Experiencia declarada (8.8 anos) no coincide con lo mencionado en el texto libre ([6])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI04_Diego_Salazar"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.405823+00:00",
+      "duration_ms": 81,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI04_Diego_Salazar",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI05_Fernanda_Paredes"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.486574+00:00",
+      "duration_ms": 86,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI05_Fernanda_Paredes",
+        "issues": [
+          "Experiencia declarada (7.8 anos) no coincide con lo mencionado en el texto libre ([5])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "CL01_Ricardo_Naranjo"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.572433+00:00",
+      "duration_ms": 88,
+      "is_error": false,
+      "result": {
+        "candidate_id": "CL01_Ricardo_Naranjo",
+        "issues": [
+          "Experiencia declarada (6.8 anos) no coincide con lo mencionado en el texto libre ([10])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "CL02_Gabriela_Pazmi_o"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.660259+00:00",
+      "duration_ms": 132,
+      "is_error": false,
+      "result": {
+        "candidate_id": "CL02_Gabriela_Pazmi_o",
+        "issues": [
+          "Experiencia declarada (9.8 anos) no coincide con lo mencionado en el texto libre ([7])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "CL03_Nicol_s_Serrano"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.793096+00:00",
+      "duration_ms": 76,
+      "is_error": false,
+      "result": {
+        "candidate_id": "CL03_Nicol_s_Serrano",
+        "issues": [
+          "Experiencia declarada (7.8 anos) no coincide con lo mencionado en el texto libre ([5])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "CL04_Elena_C_rdenas"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.868859+00:00",
+      "duration_ms": 77,
+      "is_error": false,
+      "result": {
+        "candidate_id": "CL04_Elena_C_rdenas",
+        "issues": [
+          "Experiencia declarada (6.8 anos) no coincide con lo mencionado en el texto libre ([4])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "CL05_Kevin_Zambrano"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:31.945064+00:00",
+      "duration_ms": 75,
+      "is_error": false,
+      "result": {
+        "candidate_id": "CL05_Kevin_Zambrano",
+        "issues": [
+          "Experiencia declarada (11.8 anos) no coincide con lo mencionado en el texto libre ([9])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "FS01_Andr_s_Molina"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.020135+00:00",
+      "duration_ms": 81,
+      "is_error": false,
+      "result": {
+        "candidate_id": "FS01_Andr_s_Molina",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "FS02_Sof_a_Ben_tez"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.099394+00:00",
+      "duration_ms": 77,
+      "is_error": false,
+      "result": {
+        "candidate_id": "FS02_Sof_a_Ben_tez",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "FS03_Luis_Herrera"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.172245+00:00",
+      "duration_ms": 119,
+      "is_error": false,
+      "result": {
+        "candidate_id": "FS03_Luis_Herrera",
+        "issues": [
+          "Experiencia declarada (7.8 anos) no coincide con lo mencionado en el texto libre ([5])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "FS04_Daniela_Vera"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.296960+00:00",
+      "duration_ms": 75,
+      "is_error": false,
+      "result": {
+        "candidate_id": "FS04_Daniela_Vera",
+        "issues": [
+          "Experiencia declarada (7.8 anos) no coincide con lo mencionado en el texto libre ([5])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "FS05_Pablo_R_os"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.371043+00:00",
+      "duration_ms": 75,
+      "is_error": false,
+      "result": {
+        "candidate_id": "FS05_Pablo_R_os",
+        "issues": [
+          "Experiencia declarada (1.8 anos) no coincide con lo mencionado en el texto libre ([5])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR01_Karla_Villac_s"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.442051+00:00",
+      "duration_ms": 76,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR01_Karla_Villac_s",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR02_Juan_Esteban_Castro"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.522709+00:00",
+      "duration_ms": 75,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR02_Juan_Esteban_Castro",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR03_M_nica_Acosta"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.597733+00:00",
+      "duration_ms": 76,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR03_M_nica_Acosta",
+        "issues": [
+          "Experiencia declarada (11.8 anos) no coincide con lo mencionado en el texto libre ([9])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR04_Isabella_Le_n"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.672426+00:00",
+      "duration_ms": 75,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR04_Isabella_Le_n",
+        "issues": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_detect_inconsistencies",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR05_Mart_n_Pe_a"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.748534+00:00",
+      "duration_ms": 75,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR05_Mart_n_Pe_a",
+        "issues": [
+          "Experiencia declarada (5.8 anos) no coincide con lo mencionado en el texto libre ([3])"
+        ]
+      },
+      "error": null,
+      "note": ""
+    }
+  ]
+}

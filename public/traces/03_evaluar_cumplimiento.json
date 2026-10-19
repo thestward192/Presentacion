@@ -1,0 +1,1117 @@
+{
+  "trace": "03_evaluar_cumplimiento",
+  "title": "Evaluar cumplimiento: determinista vs Jev",
+  "events": [
+    {
+      "tool": "talent_acquisition_candidate_ranking_top_n",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "top_n": 20
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:24.503486+00:00",
+      "duration_ms": 85,
+      "is_error": false,
+      "result": {
+        "result": [
+          {
+            "candidate_id": "AI02_Mateo_Cede_o",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.25,
+            "matched_requirements": [
+              "Python avanzado"
+            ],
+            "missing_requirements": [
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "AI03_Camila_Torres",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.25,
+            "matched_requirements": [
+              "Python avanzado"
+            ],
+            "missing_requirements": [
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "AI01_Valentina_Rojas",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "AI05_Fernanda_Paredes",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL01_Ricardo_Naranjo",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL02_Gabriela_Pazmi_o",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL03_Nicol_s_Serrano",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL04_Elena_C_rdenas",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL05_Kevin_Zambrano",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS01_Andr_s_Molina",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS02_Sof_a_Ben_tez",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS03_Luis_Herrera",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS04_Daniela_Vera",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR01_Karla_Villac_s",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR02_Juan_Esteban_Castro",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR03_M_nica_Acosta",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR05_Mart_n_Pe_a",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.12,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "AI04_Diego_Salazar",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.0,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs",
+              "experiencia_minima_5.0_anos"
+            ]
+          },
+          {
+            "candidate_id": "FS05_Pablo_R_os",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.0,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs",
+              "experiencia_minima_5.0_anos"
+            ]
+          },
+          {
+            "candidate_id": "HR04_Isabella_Le_n",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.0,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs",
+              "experiencia_minima_5.0_anos"
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_match_evaluate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:30.188828+00:00",
+      "duration_ms": 117,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.12,
+        "matched_requirements": [],
+        "missing_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_match_evaluate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR05_Mart_n_Pe_a"
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:30.674183+00:00",
+      "duration_ms": 79,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR05_Mart_n_Pe_a",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.12,
+        "matched_requirements": [],
+        "missing_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_ranking_top_n",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "top_n": 20
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:24.593975+00:00",
+      "duration_ms": 5594,
+      "is_error": false,
+      "result": {
+        "result": [
+          {
+            "candidate_id": "AI01_Valentina_Rojas",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 1.0,
+            "matched_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ],
+            "missing_requirements": []
+          },
+          {
+            "candidate_id": "AI02_Mateo_Cede_o",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.99,
+            "matched_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ],
+            "missing_requirements": []
+          },
+          {
+            "candidate_id": "AI03_Camila_Torres",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.69,
+            "matched_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ],
+            "missing_requirements": []
+          },
+          {
+            "candidate_id": "AI04_Diego_Salazar",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.33,
+            "matched_requirements": [
+              "APIs REST/FastAPI o framework equivalente",
+              "2+ anos de experiencia con ML/LLMs"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "experiencia_minima_5.0_anos"
+            ]
+          },
+          {
+            "candidate_id": "AI05_Fernanda_Paredes",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.33,
+            "matched_requirements": [
+              "SQL y experiencia con bases relacionales"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL02_Gabriela_Pazmi_o",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.33,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL03_Nicol_s_Serrano",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.32,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL01_Ricardo_Naranjo",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.29,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS01_Andr_s_Molina",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.29,
+            "matched_requirements": [
+              "APIs REST/FastAPI o framework equivalente",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "Docker, Git y CI/CD",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS05_Pablo_R_os",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.29,
+            "matched_requirements": [
+              "SQL y experiencia con bases relacionales"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs",
+              "experiencia_minima_5.0_anos"
+            ]
+          },
+          {
+            "candidate_id": "CL04_Elena_C_rdenas",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.28,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS02_Sof_a_Ben_tez",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.25,
+            "matched_requirements": [
+              "APIs REST/FastAPI o framework equivalente",
+              "SQL y experiencia con bases relacionales"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "Docker, Git y CI/CD",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR01_Karla_Villac_s",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.19,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS04_Daniela_Vera",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.11,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "FS03_Luis_Herrera",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.08,
+            "matched_requirements": [
+              "APIs REST/FastAPI o framework equivalente"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR04_Isabella_Le_n",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.05,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs",
+              "experiencia_minima_5.0_anos"
+            ]
+          },
+          {
+            "candidate_id": "HR02_Juan_Esteban_Castro",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.04,
+            "matched_requirements": [
+              "Ingles B2 o superior"
+            ],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "CL05_Kevin_Zambrano",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.02,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR03_M_nica_Acosta",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.0,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          },
+          {
+            "candidate_id": "HR05_Mart_n_Pe_a",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "score": 0.0,
+            "matched_requirements": [],
+            "missing_requirements": [
+              "Python avanzado",
+              "Experiencia real con LLMs, RAG y embeddings",
+              "APIs REST/FastAPI o framework equivalente",
+              "Docker, Git y CI/CD",
+              "SQL y experiencia con bases relacionales",
+              "Ingles B2 o superior",
+              "2+ anos de experiencia con ML/LLMs"
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_match_evaluate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:30.302282+00:00",
+      "duration_ms": 370,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 1.0,
+        "matched_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "missing_requirements": []
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_match_evaluate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR05_Mart_n_Pe_a"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:30.752080+00:00",
+      "duration_ms": 371,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR05_Mart_n_Pe_a",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.0,
+        "matched_requirements": [],
+        "missing_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ]
+      },
+      "error": null,
+      "note": ""
+    }
+  ],
+  "comparison": [
+    {
+      "candidate_id": "AI01_Valentina_Rojas",
+      "deterministic_score": 0.12,
+      "jev_score": 1.0,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ],
+      "jev_missing": []
+    },
+    {
+      "candidate_id": "AI02_Mateo_Cede_o",
+      "deterministic_score": 0.25,
+      "jev_score": 0.99,
+      "deterministic_matched": [
+        "Python avanzado"
+      ],
+      "jev_matched": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ],
+      "jev_missing": []
+    },
+    {
+      "candidate_id": "AI03_Camila_Torres",
+      "deterministic_score": 0.25,
+      "jev_score": 0.69,
+      "deterministic_matched": [
+        "Python avanzado"
+      ],
+      "jev_matched": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ],
+      "jev_missing": []
+    },
+    {
+      "candidate_id": "AI04_Diego_Salazar",
+      "deterministic_score": 0.0,
+      "jev_score": 0.33,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "APIs REST/FastAPI o framework equivalente",
+        "2+ anos de experiencia con ML/LLMs"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "experiencia_minima_5.0_anos"
+      ]
+    },
+    {
+      "candidate_id": "AI05_Fernanda_Paredes",
+      "deterministic_score": 0.12,
+      "jev_score": 0.33,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "SQL y experiencia con bases relacionales"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "CL02_Gabriela_Pazmi_o",
+      "deterministic_score": 0.12,
+      "jev_score": 0.33,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "CL03_Nicol_s_Serrano",
+      "deterministic_score": 0.12,
+      "jev_score": 0.32,
+      "deterministic_matched": [],
+      "jev_matched": [],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "CL01_Ricardo_Naranjo",
+      "deterministic_score": 0.12,
+      "jev_score": 0.29,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "FS01_Andr_s_Molina",
+      "deterministic_score": 0.12,
+      "jev_score": 0.29,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "APIs REST/FastAPI o framework equivalente",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "Docker, Git y CI/CD",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "FS05_Pablo_R_os",
+      "deterministic_score": 0.0,
+      "jev_score": 0.29,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "SQL y experiencia con bases relacionales"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs",
+        "experiencia_minima_5.0_anos"
+      ]
+    },
+    {
+      "candidate_id": "CL04_Elena_C_rdenas",
+      "deterministic_score": 0.12,
+      "jev_score": 0.28,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "FS02_Sof_a_Ben_tez",
+      "deterministic_score": 0.12,
+      "jev_score": 0.25,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "APIs REST/FastAPI o framework equivalente",
+        "SQL y experiencia con bases relacionales"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "Docker, Git y CI/CD",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "HR01_Karla_Villac_s",
+      "deterministic_score": 0.12,
+      "jev_score": 0.19,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "FS04_Daniela_Vera",
+      "deterministic_score": 0.12,
+      "jev_score": 0.11,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "FS03_Luis_Herrera",
+      "deterministic_score": 0.12,
+      "jev_score": 0.08,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "APIs REST/FastAPI o framework equivalente"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "HR04_Isabella_Le_n",
+      "deterministic_score": 0.0,
+      "jev_score": 0.05,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs",
+        "experiencia_minima_5.0_anos"
+      ]
+    },
+    {
+      "candidate_id": "HR02_Juan_Esteban_Castro",
+      "deterministic_score": 0.12,
+      "jev_score": 0.04,
+      "deterministic_matched": [],
+      "jev_matched": [
+        "Ingles B2 o superior"
+      ],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "CL05_Kevin_Zambrano",
+      "deterministic_score": 0.12,
+      "jev_score": 0.02,
+      "deterministic_matched": [],
+      "jev_matched": [],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "HR03_M_nica_Acosta",
+      "deterministic_score": 0.12,
+      "jev_score": 0.0,
+      "deterministic_matched": [],
+      "jev_matched": [],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    },
+    {
+      "candidate_id": "HR05_Mart_n_Pe_a",
+      "deterministic_score": 0.12,
+      "jev_score": 0.0,
+      "deterministic_matched": [],
+      "jev_matched": [],
+      "jev_missing": [
+        "Python avanzado",
+        "Experiencia real con LLMs, RAG y embeddings",
+        "APIs REST/FastAPI o framework equivalente",
+        "Docker, Git y CI/CD",
+        "SQL y experiencia con bases relacionales",
+        "Ingles B2 o superior",
+        "2+ anos de experiencia con ML/LLMs"
+      ]
+    }
+  ],
+  "jev_model": "jev-latest",
+  "threshold": 0.7
+}

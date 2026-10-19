@@ -1,0 +1,447 @@
+/* ==================================================================== */
+/* Por qué Jev: ejemplo paso a paso                                      */
+/* ==================================================================== */
+
+.why-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr) minmax(0, 0.8fr);
+  grid-template-areas:
+    'req cv lanes'
+    'total total total';
+  gap: 16px;
+  align-items: start;
+}
+.why-req {
+  grid-area: req;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+}
+.why-req.is-current {
+  animation: glow 1.6s var(--ease-out) 2;
+}
+@keyframes glow {
+  50% {
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--accent) 14%, transparent);
+  }
+}
+.why-k {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-ink);
+  margin-bottom: 6px;
+}
+.why-phrase {
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.why-cv {
+  grid-area: cv;
+  padding: 16px 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+}
+.why-cv-text {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.why-cv .doc-text {
+  max-height: none;
+  font-size: 0.9rem;
+}
+.demo-stage .scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 36px;
+  background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--series-det) 35%, transparent), transparent);
+  border-bottom: 2px solid var(--series-det);
+  transform: none;
+}
+.demo-stage .scan-line.is-on {
+  animation: scan 1.3s ease-in-out infinite alternate;
+}
+@keyframes scan {
+  from {
+    translate: 0 -36px;
+  }
+  to {
+    translate: 0 260px;
+  }
+}
+.why-lanes {
+  grid-area: lanes;
+  display: grid;
+  gap: 12px;
+}
+.why-lane {
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  min-height: 92px;
+}
+.why-lane-t {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.why-lane-s {
+  font-size: 0.95rem;
+}
+.why-lane-s .verdict {
+  font-size: 0.95rem;
+  padding: 6px 12px;
+}
+.demo-stage .why-lane-s[data-step]:not(.is-on) {
+  display: none;
+}
+.why-lane-s.is-wait {
+  color: var(--text-3);
+}
+.why-lane-s.is-busy {
+  color: var(--series-det);
+  font-weight: 600;
+}
+.why-total {
+  grid-area: total;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.why-total > div {
+  padding: 18px 22px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+}
+.why-total > .is-jev {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.why-big {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.why-total > .is-jev .why-big {
+  color: var(--accent-ink);
+}
+.why-sub {
+  color: var(--text-3);
+}
+
+/* ==================================================================== */
+/* Randall: Jev califica un CV                                           */
+/* ==================================================================== */
+
+.jev-eval {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+  gap: 20px;
+  align-items: start;
+}
+.jev-eval-left {
+  display: grid;
+  gap: 12px;
+}
+.req-rows {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+.demo-stage .req-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  opacity: 1;
+  transform: none;
+  transition: background-color 400ms var(--ease-ios), border-color 400ms var(--ease-ios);
+}
+.demo-stage .req-row:not(.is-on) {
+  color: var(--text-3);
+}
+.demo-stage .req-row.is-current {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.req-row-t {
+  font-size: 0.95rem;
+}
+.req-row-sub {
+  margin-left: 8px;
+  font-size: 0.82rem;
+  color: var(--text-3);
+}
+.check {
+  flex: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-strong);
+}
+.demo-stage .check {
+  opacity: 1;
+  transform: none;
+}
+.demo-stage .check.is-on {
+  animation: pop 450ms var(--ease-out);
+}
+.check.is-on.is-ok {
+  background: var(--ok-fg);
+  border-color: var(--ok-fg);
+}
+.check.is-on.is-no {
+  background: var(--bad-fg);
+  border-color: var(--bad-fg);
+}
+.check i {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 200ms ease 150ms;
+}
+.check.is-on i {
+  opacity: 1;
+}
+.check.is-ok i::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border-right: 2px solid var(--surface);
+  border-bottom: 2px solid var(--surface);
+  transform: rotate(45deg);
+}
+.check.is-no i::before,
+.check.is-no i::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 11px;
+  height: 2px;
+  margin: -1px 0 0 -5.5px;
+  background: var(--surface);
+  transform: rotate(45deg);
+}
+.check.is-no i::after {
+  transform: rotate(-45deg);
+}
+@keyframes pop {
+  0% {
+    scale: 0.6;
+  }
+  70% {
+    scale: 1.15;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.gauge-card {
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  background: var(--glass);
+  text-align: center;
+}
+.demo-stage .gauge-card {
+  opacity: 1;
+  transform: none;
+}
+.gauge-wrap {
+  position: relative;
+  width: min(100%, 200px);
+  margin: 0 auto;
+}
+.gauge {
+  display: block;
+  width: 100%;
+  transform: rotate(-90deg);
+}
+.gauge-track {
+  fill: none;
+  stroke: color-mix(in srgb, var(--text) 10%, transparent);
+  stroke-width: 12;
+}
+.gauge-fill {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: var(--c);
+  stroke-dashoffset: var(--c);
+  transition: stroke-dashoffset 1.4s var(--ease-out);
+}
+.is-on .gauge-fill {
+  stroke-dashoffset: var(--v);
+}
+.gauge-card.is-fail .gauge-fill {
+  stroke: var(--text-2);
+}
+.gauge-min {
+  stroke: var(--text);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+.gauge-center {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+}
+.gauge-n {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  opacity: 0;
+  transition: opacity 500ms ease 700ms;
+}
+.gauge-l {
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+.is-on .gauge-n {
+  opacity: 1;
+}
+.gauge-msg {
+  margin-top: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 500ms ease 1s;
+}
+.gauge-msg span {
+  font-weight: 400;
+  color: var(--text-3);
+}
+.is-on .gauge-msg {
+  opacity: 1;
+}
+.gauge-card.is-pass .gauge-msg {
+  color: var(--ok-fg);
+}
+.gauge-sub {
+  color: var(--text-3);
+  font-size: 0.9rem;
+}
+
+/* Ranking: las barras crecen al entrar al bloque */
+.rank-card:not(.is-in) .rank-fill {
+  width: 0;
+}
+.rank-card .rank-fill {
+  transition: width 900ms var(--ease-out);
+  transition-delay: calc(300ms + var(--y, 0) * 45ms);
+}
+.rank-row {
+  transform: translateY(calc(var(--y, 0) * var(--row-h)));
+}
+
+/* ==================================================================== */
+/* Stward: los cuatro casos y el marcador del embudo                     */
+/* ==================================================================== */
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.case-card {
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+  border-top: 4px solid var(--muted-line);
+  background: var(--glass-strong);
+  box-shadow: var(--shadow-card);
+}
+.case-card.is-avanzar {
+  border-top-color: var(--ok-fg);
+}
+.case-card.is-revisar {
+  border-top-color: var(--warn-fg);
+}
+.case-card.is-no_procesable {
+  border-top-color: var(--bad-fg);
+}
+.case-k {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-3);
+}
+.case-name {
+  margin: 4px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.case-reason {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+.case-rule {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--text-3);
+}
+
+.funnel {
+  position: relative;
+}
+.demo-stage .rule {
+  min-height: 62px;
+}
+.demo-stage .funnel-marker {
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -4px;
+  height: 70px;
+  z-index: 2;
+  pointer-events: none;
+  border: 2px solid var(--accent);
+  border-radius: 18px;
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--accent) 12%, transparent);
+  transform: none;
+  translate: 0 calc(var(--at, 0) * 70px);
+  transition: translate 700ms var(--ease-ios), opacity 300ms ease;
+}
+.funnel-chip {
+  position: absolute;
+  right: 12px;
+  top: -12px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .why-stage {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'req' 'cv' 'lanes' 'total';
+  }
+  .jev-eval,
+  .case-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

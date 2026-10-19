@@ -1,0 +1,27 @@
+{
+  "trace": "07_reporte_excel",
+  "title": "Reporte Excel de toda la vacante",
+  "events": [
+    {
+      "tool": "talent_acquisition_screening_report_create",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "output_dir": "C:\\Users\\sserrano\\Desktop\\presentacion-ta-brief\\traces\\excel"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:36.096853+00:00",
+      "duration_ms": 5523,
+      "is_error": false,
+      "result": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "file_path": "C:\\Users\\sserrano\\Desktop\\presentacion-ta-brief\\traces\\excel\\screening_report_VAC-AI-ENGINEER_20261014_200541.xlsx",
+        "generated_at": "<telefono>T20:05:41.617418Z",
+        "matched_count": 3,
+        "discarded_count": 17,
+        "threshold": 0.7
+      },
+      "error": null,
+      "note": ""
+    }
+  ]
+}

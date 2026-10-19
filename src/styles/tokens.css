@@ -1,0 +1,163 @@
+/* Tokens de diseño. Ningún componente usa colores fijos: todo pasa por aquí. */
+
+:root {
+  color-scheme: light;
+
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --surface-2: #f5f5f4;
+  --text: #1c1917;
+  /* Secundario de la especificación: se usa en líneas, ejes y texto sobre superficie blanca. */
+  --text-2: #78716c;
+  /* Texto secundario sobre cualquier fondo (incluido #F5F5F4): garantiza AA (>= 4.5:1). */
+  --text-3: #6b645f;
+  --border: #e7e5e4;
+  --border-strong: #d6d3d1;
+  --accent: #4f46e5;
+  --accent-ink: #4338ca;
+  --accent-soft: rgba(79, 70, 229, 0.09);
+  --accent-line: rgba(79, 70, 229, 0.14);
+  --on-accent: #ffffff;
+
+  /* Estados (versión apagada). Texto sobre su fondo >= 4.5:1. */
+  --ok-bg: #ebf5ee;
+  --ok-fg: #1d6b3a;
+  --ok-line: #9fcfae;
+  --warn-bg: #fbf3e2;
+  --warn-fg: #8a4b0b;
+  --warn-line: #e8c98c;
+  --muted-bg: #f0efed;
+  --muted-fg: #57534e;
+  --muted-line: #d6d3d1;
+  --bad-bg: #fbecec;
+  --bad-fg: #9b2c2c;
+  --bad-line: #e8b4b4;
+
+  /* Series del gráfico (validadas para daltonismo y contraste). */
+  --series-det: #c2410c;
+  --series-jev: #4f46e5;
+
+  /* Código: GitHub Light. */
+  --code-bg: #ffffff;
+  --code-text: #1f2328;
+  --code-gutter: #59636e;
+  --code-keyword: #cf222e;
+  --code-string: #0a3069;
+  --code-comment: #59636e;
+  --code-number: #0550ae;
+  --code-function: #7339c4;
+  --code-decorator: #953800;
+  --code-active: rgba(79, 70, 229, 0.08);
+
+  --shadow: 0 1px 2px rgba(28, 25, 23, 0.04);
+  --shadow-lift: 0 4px 16px rgba(28, 25, 23, 0.06);
+
+  --radius: 8px;
+  --radius-sm: 6px;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 200ms;
+  --t-med: 300ms;
+  --t-slow: 400ms;
+  --nav-h: 56px;
+}
+
+/* Oscuro por preferencia del sistema, salvo que el usuario haya elegido claro. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+
+    --bg: #0c0a09;
+    --surface: #1c1917;
+    --surface-2: #151210;
+    --text: #f5f5f4;
+    --text-2: #a8a29e;
+    --text-3: #a8a29e;
+    --border: #292524;
+    --border-strong: #3a3532;
+    --accent: #818cf8;
+    --accent-ink: #a5b4fc;
+    --accent-soft: rgba(129, 140, 248, 0.12);
+    --accent-line: rgba(129, 140, 248, 0.2);
+    --on-accent: #0c0a09;
+
+    --ok-bg: #12251a;
+    --ok-fg: #8fd3a6;
+    --ok-line: #2d5a3c;
+    --warn-bg: #2a2112;
+    --warn-fg: #e6c07a;
+    --warn-line: #5c4521;
+    --muted-bg: #24211f;
+    --muted-fg: #c4beb9;
+    --muted-line: #3f3a37;
+    --bad-bg: #2d1717;
+    --bad-fg: #f0a8a8;
+    --bad-line: #5e2c2c;
+
+    --series-det: #db6a32;
+    --series-jev: #7c83f0;
+
+    --code-bg: #161311;
+    --code-text: #e6edf3;
+    --code-gutter: #8b949e;
+    --code-keyword: #ff7b72;
+    --code-string: #a5d6ff;
+    --code-comment: #8b949e;
+    --code-number: #79c0ff;
+    --code-function: #d2a8ff;
+    --code-decorator: #ffa657;
+    --code-active: rgba(129, 140, 248, 0.16);
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-lift: 0 4px 16px rgba(0, 0, 0, 0.35);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #0c0a09;
+  --surface: #1c1917;
+  --surface-2: #151210;
+  --text: #f5f5f4;
+  --text-2: #a8a29e;
+  --text-3: #a8a29e;
+  --border: #292524;
+  --border-strong: #3a3532;
+  --accent: #818cf8;
+  --accent-ink: #a5b4fc;
+  --accent-soft: rgba(129, 140, 248, 0.12);
+  --accent-line: rgba(129, 140, 248, 0.2);
+  --on-accent: #0c0a09;
+
+  --ok-bg: #12251a;
+  --ok-fg: #8fd3a6;
+  --ok-line: #2d5a3c;
+  --warn-bg: #2a2112;
+  --warn-fg: #e6c07a;
+  --warn-line: #5c4521;
+  --muted-bg: #24211f;
+  --muted-fg: #c4beb9;
+  --muted-line: #3f3a37;
+  --bad-bg: #2d1717;
+  --bad-fg: #f0a8a8;
+  --bad-line: #5e2c2c;
+
+  --series-det: #db6a32;
+  --series-jev: #7c83f0;
+
+  --code-bg: #161311;
+  --code-text: #e6edf3;
+  --code-gutter: #8b949e;
+  --code-keyword: #ff7b72;
+  --code-string: #a5d6ff;
+  --code-comment: #8b949e;
+  --code-number: #79c0ff;
+  --code-function: #d2a8ff;
+  --code-decorator: #ffa657;
+  --code-active: rgba(129, 140, 248, 0.16);
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-lift: 0 4px 16px rgba(0, 0, 0, 0.35);
+}

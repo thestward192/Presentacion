@@ -1,0 +1,117 @@
+/* ==================================================================== */
+/* Navegación con botones (la rueda solo desplaza el contenido)          */
+/* ==================================================================== */
+
+.slide-viewport {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.deck-arrows {
+  position: fixed;
+  right: 20px;
+  bottom: 14px;
+  z-index: 45;
+  display: flex;
+  gap: 8px;
+}
+.deck-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-strong);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: transform 250ms var(--ease-ios), opacity 250ms ease, background-color 250ms ease;
+}
+.deck-btn:hover {
+  background: var(--accent);
+}
+.deck-btn:hover i {
+  border-color: var(--on-accent);
+}
+.deck-btn:active {
+  transform: scale(0.92);
+}
+.deck-btn:disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
+.deck-btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid var(--text);
+  border-top: 2px solid var(--text);
+  transition: border-color 250ms ease;
+}
+.deck-up i {
+  transform: translate(-50%, -25%) rotate(45deg);
+}
+.deck-down i {
+  transform: translate(-50%, -75%) rotate(225deg);
+}
+.dots {
+  right: 30px;
+}
+
+/* ==================================================================== */
+/* Cursor                                                                 */
+/* ==================================================================== */
+
+.has-cursor,
+.has-cursor * {
+  cursor: none !important;
+}
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.cursor-visible .cursor-dot,
+.cursor-visible .cursor-ring {
+  opacity: 1;
+}
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: var(--accent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 1.5px solid color-mix(in srgb, var(--accent) 60%, transparent);
+  transition: opacity 300ms ease, width 300ms var(--ease-ios), height 300ms var(--ease-ios), margin 300ms var(--ease-ios), background-color 300ms ease, border-color 300ms ease;
+}
+.cursor-ring.is-hover {
+  width: 56px;
+  height: 56px;
+  margin: -28px 0 0 -28px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-color: var(--accent);
+}
+.cursor-ring.is-text {
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+}
+.cursor-ring.is-down {
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}

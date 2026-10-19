@@ -1,0 +1,247 @@
+{
+  "trace": "05_informe_prescreening",
+  "title": "Informe de pre-screening",
+  "events": [
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:32.849412+00:00",
+      "duration_ms": 77,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.12,
+        "missing_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "inconsistencies": [],
+        "recommendation": "descartar",
+        "matched_requirements": [],
+        "unprocessable_reason": null
+      },
+      "error": null,
+      "note": "mejor nota con Jev"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI03_Camila_Torres"
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:33.272247+00:00",
+      "duration_ms": 81,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI03_Camila_Torres",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.25,
+        "missing_requirements": [
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "inconsistencies": [
+          "Experiencia declarada (8.8 anos) no coincide con lo mencionado en el texto libre ([6])"
+        ],
+        "recommendation": "revisar",
+        "matched_requirements": [
+          "Python avanzado"
+        ],
+        "unprocessable_reason": null
+      },
+      "error": null,
+      "note": "CV con inconsistencia -> revisar"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR05_Mart_n_Pe_a"
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:33.714322+00:00",
+      "duration_ms": 79,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR05_Mart_n_Pe_a",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.12,
+        "missing_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "inconsistencies": [
+          "Experiencia declarada (5.8 anos) no coincide con lo mencionado en el texto libre ([3])"
+        ],
+        "recommendation": "revisar",
+        "matched_requirements": [],
+        "unprocessable_reason": null
+      },
+      "error": null,
+      "note": "nota mas baja"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-FULLSTACK-DEV",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "deterministic",
+      "started_at": "2026-10-14T20:05:34.162471+00:00",
+      "duration_ms": 24,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "vacancy_id": "VAC-FULLSTACK-DEV",
+        "score": null,
+        "missing_requirements": [],
+        "inconsistencies": [],
+        "recommendation": "no_procesable",
+        "matched_requirements": [],
+        "unprocessable_reason": "No se pudo leer AI01_Valentina_Rojas.pdf: el PDF esta danado"
+      },
+      "error": null,
+      "note": "archivo ilegible -> no_procesable"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:32.925867+00:00",
+      "duration_ms": 349,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 1.0,
+        "missing_requirements": [],
+        "inconsistencies": [],
+        "recommendation": "avanzar",
+        "matched_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "unprocessable_reason": null
+      },
+      "error": null,
+      "note": "mejor nota con Jev"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "AI03_Camila_Torres"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:33.356585+00:00",
+      "duration_ms": 358,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI03_Camila_Torres",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.7,
+        "missing_requirements": [],
+        "inconsistencies": [
+          "Experiencia declarada (8.8 anos) no coincide con lo mencionado en el texto libre ([6])"
+        ],
+        "recommendation": "revisar",
+        "matched_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "unprocessable_reason": null
+      },
+      "error": null,
+      "note": "CV con inconsistencia -> revisar"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "candidate_id": "HR05_Mart_n_Pe_a"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:33.794559+00:00",
+      "duration_ms": 369,
+      "is_error": false,
+      "result": {
+        "candidate_id": "HR05_Mart_n_Pe_a",
+        "vacancy_id": "VAC-AI-ENGINEER",
+        "score": 0.0,
+        "missing_requirements": [
+          "Python avanzado",
+          "Experiencia real con LLMs, RAG y embeddings",
+          "APIs REST/FastAPI o framework equivalente",
+          "Docker, Git y CI/CD",
+          "SQL y experiencia con bases relacionales",
+          "Ingles B2 o superior",
+          "2+ anos de experiencia con ML/LLMs"
+        ],
+        "inconsistencies": [
+          "Experiencia declarada (5.8 anos) no coincide con lo mencionado en el texto libre ([3])"
+        ],
+        "recommendation": "revisar",
+        "matched_requirements": [],
+        "unprocessable_reason": null
+      },
+      "error": null,
+      "note": "nota mas baja"
+    },
+    {
+      "tool": "talent_acquisition_screening_report_generate",
+      "args": {
+        "vacancy_id": "VAC-FULLSTACK-DEV",
+        "candidate_id": "AI01_Valentina_Rojas"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:34.186552+00:00",
+      "duration_ms": 306,
+      "is_error": false,
+      "result": {
+        "candidate_id": "AI01_Valentina_Rojas",
+        "vacancy_id": "VAC-FULLSTACK-DEV",
+        "score": null,
+        "missing_requirements": [],
+        "inconsistencies": [],
+        "recommendation": "no_procesable",
+        "matched_requirements": [],
+        "unprocessable_reason": "No se pudo leer AI01_Valentina_Rojas.pdf: el PDF esta danado"
+      },
+      "error": null,
+      "note": "archivo ilegible -> no_procesable"
+    }
+  ]
+}

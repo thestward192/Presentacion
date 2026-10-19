@@ -1,0 +1,599 @@
+{
+  "trace": "02_leer_cv",
+  "title": "Leer los CVs de la carpeta centralizada",
+  "events": [
+    {
+      "tool": "talent_acquisition_candidate_cv_list",
+      "args": {
+        "vacancy_id": "VAC-AI-ENGINEER"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:24.393554+00:00",
+      "duration_ms": 87,
+      "is_error": false,
+      "result": {
+        "result": [
+          {
+            "candidate_id": "AI01_Valentina_Rojas",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 8.8,
+            "skills": [
+              "Python (avanzado)",
+              "FastAPI",
+              "Pydantic",
+              "asyncio",
+              "Anthropic",
+              "OpenAI",
+              "Azure OpenAI",
+              "AWS Bedrock",
+              "RAG",
+              "embeddings",
+              "chunking",
+              "búsqueda híbrida",
+              "pgvector",
+              "Pinecone",
+              "FAISS",
+              "LangChain",
+              "LlamaIndex",
+              "LangSmith",
+              "MLflow",
+              "OpenTelemetry",
+              "Docker",
+              "Kubernetes",
+              "Git",
+              "GitHub Actions (CI/CD)",
+              "SQL (PostgreSQL)",
+              "AWS y GCP"
+            ],
+            "raw_text": "Valentina Rojas\nSenior AI Engineer\n<correo> · Bogotá, Colombia\nPERFIL\nIngeniera de IA con 8 años de experiencia en software y 4 años construyendo sistemas con LLMs en\nproducción. Especialista en RAG, embeddings y evaluación de respuestas.\nHABILIDADES\n  Python (avanzado), FastAPI, Pydantic, asyncio\n LLMs: Anthropic, OpenAI, Azure OpenAI, AWS Bedrock\n RAG, embeddings, chunking, búsqueda híbrida\n Vector DB: pgvector, Pinecone, FAISS\n LangChain, LlamaIndex, LangSmith, MLflow, OpenTelemetry\n Docker, Kubernetes, Git, GitHub Actions (CI/CD)\n SQL (PostgreSQL), AWS y GCP\nEXPERIENCIA\nSenior AI Engineer — Finlytics (2022 - Actualidad)\n  Diseñé una plataforma RAG sobre 2M de d [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "AI02_Mateo_Cede_o",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 6.8,
+            "skills": [
+              "Python avanzado",
+              "FastAPI",
+              "OpenAI",
+              "Azure OpenAI",
+              "embeddings",
+              "RAG",
+              "LangChain",
+              "FAISS",
+              "Docker",
+              "Git",
+              "GitLab CI",
+              "PostgreSQL y SQL Server",
+              "AWS (EC2",
+              "S3",
+              "Lambda)"
+            ],
+            "raw_text": "Mateo Cedeño\nAI Engineer\n<correo> · Quito, Ecuador\nPERFIL\nIngeniero con 6 años de experiencia, 3 de ellos en proyectos con LLMs y RAG para clientes\nempresariales.\nHABILIDADES\n  Python avanzado, FastAPI\n OpenAI, Azure OpenAI, embeddings, RAG\n LangChain, FAISS\n Docker, Git, GitLab CI\n PostgreSQL y SQL Server\n AWS (EC2, S3, Lambda)\nEXPERIENCIA\nAI Engineer — Konecta Labs (2023 - Actualidad)\n  Construí un asistente RAG para base de conocimiento interna con FAISS y LangChain.\n Expuse servicios con FastAPI y los desplegué con Docker y GitLab CI.\nData Engineer — Banco Pichincha (<telefono>)\n  Pipelines ETL en Python y SQL.\n Primeros modelos de NLP para clasificación de tic [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "AI03_Camila_Torres",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 8.8,
+            "skills": [
+              "Python avanzado",
+              "scikit-learn",
+              "XGBoost",
+              "PyTorch",
+              "MLflow",
+              "Airflow",
+              "FastAPI",
+              "Docker",
+              "Git",
+              "CI/CD",
+              "SQL y PostgreSQL",
+              "Nociones de embeddings y RAG (proyecto interno)",
+              "GCP (Vertex AI)"
+            ],
+            "raw_text": "Camila Torres\nMachine Learning Engineer\n<correo> · Santiago, Chile\nPERFIL\nIngeniera de ML con 6 años de experiencia en modelos clásicos (forecasting, clasificación). Experiencia\nreciente y limitada con LLMs (1 año).\nHABILIDADES\n  Python avanzado, scikit-learn, XGBoost, PyTorch\n MLflow, Airflow\n FastAPI, Docker, Git, CI/CD\n SQL y PostgreSQL\n Nociones de embeddings y RAG (proyecto interno)\n GCP (Vertex AI)\nEXPERIENCIA\nMachine Learning Engineer — Cornershop (2021 - Actualidad)\n  Modelos de demanda en producción con MLflow y Airflow.\n Prototipo RAG interno con embeddings (1 año de experiencia con LLMs).\nData Scientist — Falabella (<telefono>)\n  Modelos de churn y segme [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "AI04_Diego_Salazar",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 2.8,
+            "skills": [
+              "Python intermedio",
+              "Flask",
+              "Prompt engineering",
+              "llamadas a API de OpenAI",
+              "Primeros proyectos con LangChain",
+              "Git",
+              "Docker básico",
+              "SQL básico"
+            ],
+            "raw_text": "Diego Salazar\nJunior AI Developer\n<correo> · Lima, Perú\nPERFIL\nDesarrollador con 2 años de experiencia total, enfocado en IA generativa tras completar un bootcamp.\nBusca crecer hacia roles senior.\nHABILIDADES\n  Python intermedio, Flask\n Prompt engineering, llamadas a API de OpenAI\n Primeros proyectos con LangChain\n Git, Docker básico\n SQL básico\nEXPERIENCIA\nJunior AI Developer — StartupIA (2024 - Actualidad)\n  Chatbot con OpenAI API y LangChain para atención al cliente.\n Mantenimiento de scripts de procesamiento de texto.\nPracticante de Desarrollo — Telefónica (<telefono>)\n  Automatización de reportes en Python.\nEDUCACIÓN\nBootcamp en IA Generativa, Platzi (2024); Ba [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "AI05_Fernanda_Paredes",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 7.8,
+            "skills": [
+              "Python",
+              "pandas",
+              "scikit-learn",
+              "R y estadística avanzada",
+              "SQL",
+              "Power BI",
+              "Jupyter",
+              "Git",
+              "Modelos de regresión y series de tiempo"
+            ],
+            "raw_text": "Fernanda Paredes\nData Scientist\n<correo> · Guayaquil, Ecuador\nPERFIL\nCientífica de datos con 5 años de experiencia en análisis estadístico y modelos predictivos. Sin\nexperiencia en producción con LLMs.\nHABILIDADES\n  Python, pandas, scikit-learn\n R y estadística avanzada\n SQL, Power BI\n Jupyter, Git\n Modelos de regresión y series de tiempo\nEXPERIENCIA\nData Scientist — Corporación Favorita (2021 - Actualidad)\n  Modelos predictivos de ventas y reportes ejecutivos en Power BI.\n Análisis A/B y diseño de experimentos.\nAnalista de Datos — Produbanco (<telefono>)\n  Consultas SQL y dashboards.\nEDUCACIÓN\nEstadística, ESPOL (2019)\nIDIOMAS\nEspañol nativo, Inglés A2",
+            "read_error": null
+          },
+          {
+            "candidate_id": "CL01_Ricardo_Naranjo",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 6.8,
+            "skills": [
+              "AWS a nivel arquitectura (Organizations",
+              "VPC",
+              "IAM",
+              "SCP)",
+              "GCP",
+              "Kubernetes (EKS/GKE) en producción",
+              "Terraform",
+              "Argo CD (GitOps)",
+              "Linux avanzado (RHEL",
+              "Ubuntu)",
+              "Prometheus",
+              "Grafana",
+              "OpenTelemetry",
+              "SLOs",
+              "seguridad y cumplimiento en la nube",
+              "Python para automatización",
+              "FinOps",
+              "estrategia multi-cloud"
+            ],
+            "raw_text": "Ricardo Naranjo\nPrincipal Cloud Architect / SRE\n<correo> · Ciudad de México, México\nPERFIL\nArquitecto cloud con 10 años de experiencia en infraestructura, 6 como SRE/DevOps. Diseño de landing\nzones multi-cuenta y plataformas Kubernetes.\nHABILIDADES\n  AWS a nivel arquitectura (Organizations, VPC, IAM, SCP), GCP\n Kubernetes (EKS/GKE) en producción\n Terraform, Argo CD (GitOps)\n Linux avanzado (RHEL, Ubuntu)\n Prometheus, Grafana, OpenTelemetry, SLOs\n IAM, seguridad y cumplimiento en la nube\n Python para automatización, FinOps, estrategia multi-cloud\nEXPERIENCIA\nPrincipal Cloud Architect — Mercado Libre (2020 - Actualidad)\n  Diseñé landing zone multi-cuenta en AWS para  [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "CL02_Gabriela_Pazmi_o",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 9.8,
+            "skills": [
+              "GCP a nivel arquitectura (GKE",
+              "VPC",
+              "IAM",
+              "Cloud Armor)",
+              "Kubernetes en producción",
+              "Terraform",
+              "GitHub Actions",
+              "Linux avanzado",
+              "Prometheus",
+              "Grafana",
+              "OpenTelemetry",
+              "IAM y seguridad en la nube",
+              "Python",
+              "FinOps"
+            ],
+            "raw_text": "Gabriela Pazmiño\nSenior Cloud / DevOps Engineer\n<correo> · Quito, Ecuador\nPERFIL\nIngeniera cloud con 7 años de experiencia, enfocada en GCP, Kubernetes e infraestructura como código.\nHABILIDADES\n  GCP a nivel arquitectura (GKE, VPC, IAM, Cloud Armor)\n Kubernetes en producción\n Terraform, GitHub Actions\n Linux avanzado\n Prometheus, Grafana, OpenTelemetry\n IAM y seguridad en la nube\n Python, FinOps\nEXPERIENCIA\nSenior Cloud Engineer — Jumbo Tech (2021 - Actualidad)\n  Arquitectura GCP multi-proyecto con Terraform.\n Clusters GKE en producción y observabilidad con Prometheus/Grafana.\n Gobierno de IAM y políticas de organización.\nDevOps Engineer — Corporación El Rosado [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "CL03_Nicol_s_Serrano",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 7.8,
+            "skills": [
+              "AWS (EC2",
+              "EKS",
+              "RDS)",
+              "Kubernetes en producción",
+              "Terraform",
+              "Linux intermedio-avanzado",
+              "Jenkins",
+              "GitHub Actions",
+              "Monitoreo básico con Grafana",
+              "Python y Bash"
+            ],
+            "raw_text": "Nicolás Serrano\nDevOps Engineer\n<correo> · Medellín, Colombia\nPERFIL\nDevOps con 5 años de experiencia en AWS y Kubernetes. Foco en pipelines y despliegues; menor\nexposición a seguridad e IAM avanzado.\nHABILIDADES\n  AWS (EC2, EKS, RDS)\n Kubernetes en producción\n Terraform\n Linux intermedio-avanzado\n Jenkins, GitHub Actions\n Monitoreo básico con Grafana\n Python y Bash\nEXPERIENCIA\nDevOps Engineer — Bancolombia (2022 - Actualidad)\n  Administración de clusters EKS y pipelines CI/CD.\n Módulos Terraform reutilizables.\nSysadmin / DevOps Jr — Sistecrédito (<telefono>)\n  Soporte de servidores Linux y automatización con Bash.\nEDUCACIÓN\nIngeniería de Sistemas, Universidad N [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "CL04_Elena_C_rdenas",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 6.8,
+            "skills": [
+              "Azure (AKS",
+              "VNet",
+              "Entra ID)",
+              "Kubernetes (AKS) en producción",
+              "Bicep y algo de Terraform",
+              "Linux intermedio",
+              "Azure Monitor",
+              "Grafana",
+              "Azure DevOps",
+              "PowerShell y Python básico"
+            ],
+            "raw_text": "Elena Cárdenas\nCloud Engineer (Azure)\n<correo> · Cuenca, Ecuador\nPERFIL\nIngeniera cloud con 4 años de experiencia, principalmente en Azure. Exposición inicial a AWS.\nHABILIDADES\n  Azure (AKS, VNet, Entra ID)\n Kubernetes (AKS) en producción\n Bicep y algo de Terraform\n Linux intermedio\n Azure Monitor, Grafana\n Azure DevOps\n PowerShell y Python básico\nEXPERIENCIA\nCloud Engineer — Etafashion (2022 - Actualidad)\n  Migración de cargas a Azure y operación de AKS.\n Políticas de acceso con Entra ID.\nSoporte de Infraestructura — Claro (<telefono>)\n  Soporte a servidores Windows y Linux.\nEDUCACIÓN\nIngeniería en Sistemas, Universidad de Cuenca (2020). AZ-104\nIDIOMAS\nEspañol  [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "CL05_Kevin_Zambrano",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 11.8,
+            "skills": [
+              "Linux avanzado (RHEL",
+              "CentOS",
+              "Debian)",
+              "VMware",
+              "redes y almacenamiento",
+              "Nagios",
+              "Zabbix",
+              "Bash y Ansible",
+              "Nociones de AWS (EC2",
+              "S3)"
+            ],
+            "raw_text": "Kevin Zambrano\nAdministrador de Sistemas Linux\n<correo> · Guayaquil, Ecuador\nPERFIL\nAdministrador de sistemas con 9 años de experiencia on-premise. Linux avanzado; poca experiencia en\ncloud, sin Kubernetes en producción.\nHABILIDADES\n  Linux avanzado (RHEL, CentOS, Debian)\n VMware, redes y almacenamiento\n Nagios, Zabbix\n Bash y Ansible\n Nociones de AWS (EC2, S3)\nEXPERIENCIA\nAdministrador de Sistemas Senior — Banco Guayaquil (2018 - Actualidad)\n  Administración de 200+ servidores Linux y alta disponibilidad.\n Automatización con Ansible y monitoreo con Zabbix.\nTécnico de Infraestructura — CNT (<telefono>)\n  Soporte de datacenter.\nEDUCACIÓN\nTecnólogo en Redes, ESPOL (2 [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "FS01_Andr_s_Molina",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 8.8,
+            "skills": [
+              "TypeScript avanzado",
+              "React",
+              "Next.js",
+              "Node.js",
+              "NestJS",
+              "REST y GraphQL",
+              "PostgreSQL",
+              "Redis",
+              "Jest",
+              "Playwright",
+              "Cypress",
+              "AWS (ECS",
+              "RDS",
+              "S3)",
+              "Terraform"
+            ],
+            "raw_text": "Andrés Molina\nSenior Full Stack Developer\n<correo> · Buenos Aires, Argentina\nPERFIL\nDesarrollador full stack con 7 años de experiencia construyendo plataformas web con TypeScript, React y\nNode.js sobre AWS.\nHABILIDADES\n  TypeScript avanzado\n React, Next.js\n Node.js, NestJS\n REST y GraphQL\n PostgreSQL, Redis\n Jest, Playwright, Cypress\n AWS (ECS, RDS, S3), Terraform\nEXPERIENCIA\nSenior Full Stack Developer — Mercado Pago (2021 - Actualidad)\n  Frontend en Next.js y APIs en NestJS con PostgreSQL.\n Suite E2E con Playwright y unit tests con Jest.\n Infraestructura en AWS con Terraform.\nFull Stack Developer — Despegar (<telefono>)\n  React y Node.js para flujos de reservas [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "FS02_Sof_a_Ben_tez",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 6.8,
+            "skills": [
+              "TypeScript avanzado",
+              "React",
+              "Node.js",
+              "Express",
+              "APIs REST",
+              "PostgreSQL",
+              "Jest",
+              "Playwright",
+              "AWS (EC2",
+              "S3",
+              "RDS)"
+            ],
+            "raw_text": "Sofía Benítez\nFull Stack Developer\n<correo> · Asunción, Paraguay\nPERFIL\nDesarrolladora full stack con 5 años de experiencia, sólida en TypeScript, React y Node.js.\nHABILIDADES\n  TypeScript avanzado\n React\n Node.js, Express\n APIs REST\n PostgreSQL\n Jest, Playwright\n AWS (EC2, S3, RDS)\nEXPERIENCIA\nFull Stack Developer — Tigo Business (2022 - Actualidad)\n  SPA en React y APIs en Node.js con PostgreSQL.\n Pruebas con Jest y Playwright; despliegue en AWS.\nDesarrolladora Web — Agencia Pixel (<telefono>)\n  Sitios y apps en React y Express.\nEDUCACIÓN\nIngeniería Informática, Universidad Católica (2020)\nIDIOMAS\nEspañol nativo, Inglés B1",
+            "read_error": null
+          },
+          {
+            "candidate_id": "FS03_Luis_Herrera",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 7.8,
+            "skills": [
+              "JavaScript",
+              "TypeScript básico",
+              "React",
+              "Node.js",
+              "Express",
+              "REST",
+              "MongoDB",
+              "algo de MySQL",
+              "Azure App Service"
+            ],
+            "raw_text": "Luis Herrera\nDesarrollador Full Stack\n<correo> · Lima, Perú\nPERFIL\nDesarrollador con 5 años de experiencia, principalmente JavaScript. TypeScript básico, base de datos\nMongoDB, sin testing sistemático.\nHABILIDADES\n  JavaScript, TypeScript básico\n React\n Node.js, Express\n REST\n MongoDB, algo de MySQL\n Azure App Service\nEXPERIENCIA\nDesarrollador Full Stack — Intercorp (2021 - Actualidad)\n  Apps en React y Node.js con MongoDB.\n Despliegues en Azure.\nDesarrollador Web — Agencia Digital (<telefono>)\n  Sitios con React y APIs REST.\nEDUCACIÓN\nIngeniería de Software, UPC (2019)\nIDIOMAS\nEspañol nativo, Inglés B1",
+            "read_error": null
+          },
+          {
+            "candidate_id": "FS04_Daniela_Vera",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 7.8,
+            "skills": [
+              "TypeScript",
+              "React",
+              "Next.js",
+              "Node.js básico",
+              "REST (consumo)",
+              "Jest",
+              "Testing Library",
+              "Cypress",
+              "Figma y accesibilidad",
+              "Firebase y Vercel"
+            ],
+            "raw_text": "Daniela Vera\nFrontend Developer\n<correo> · Montevideo, Uruguay\nPERFIL\nDesarrolladora con 5 años de experiencia, fuerte en frontend. Backend ocasional y sin experiencia en\nAWS.\nHABILIDADES\n  TypeScript\n React, Next.js\n Node.js básico\n REST (consumo)\n Jest, Testing Library, Cypress\n Figma y accesibilidad\n Firebase y Vercel\nEXPERIENCIA\nFrontend Developer — dLocal (2021 - Actualidad)\n  Interfaces en Next.js y librería de componentes.\n Pruebas con Jest y Cypress.\nFrontend Developer — Agencia Pixel UY (<telefono>)\n  Sitios y landings en React.\nEDUCACIÓN\nLicenciatura en Diseño y Desarrollo Web, ORT (2019)\nIDIOMAS\nEspañol nativo, Inglés C1",
+            "read_error": null
+          },
+          {
+            "candidate_id": "FS05_Pablo_R_os",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 1.8,
+            "skills": [
+              "JavaScript",
+              "TypeScript básico",
+              "React",
+              "Node.js básico",
+              "MySQL",
+              "Git"
+            ],
+            "raw_text": "Pablo Ríos\nDesarrollador Junior\n<correo> · Cali, Colombia\nPERFIL\nDesarrollador con 1.5 años de experiencia tras un bootcamp full stack.\nHABILIDADES\n  JavaScript, TypeScript básico\n React\n Node.js básico\n MySQL\n Git\nEXPERIENCIA\nDesarrollador Junior — Soluciones Web SAS (2025 - Actualidad)\n  Mantenimiento de módulos en React y Node.js.\nEDUCACIÓN\nBootcamp Full Stack, Henry (2024)\nIDIOMAS\nEspañol nativo, Inglés A2",
+            "read_error": null
+          },
+          {
+            "candidate_id": "HR01_Karla_Villac_s",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 8.8,
+            "skills": [
+              "Reclutamiento técnico (tech recruiting)",
+              "Greenhouse",
+              "Lever",
+              "Workday",
+              "BambooHR",
+              "time to hire",
+              "turnover",
+              "headcount",
+              "Power BI",
+              "Excel avanzado",
+              "SQL",
+              "Onboarding y compensaciones",
+              "Selección end-to-end"
+            ],
+            "raw_text": "Karla Villacís\nSenior Talent Acquisition & People Analytics\n<correo> · Quito, Ecuador\nPERFIL\nEspecialista con 7 años en reclutamiento técnico y analítica de personas. Selección end-to-end para\nequipos de ingeniería en LATAM.\nHABILIDADES\n  Reclutamiento técnico (tech recruiting)\n ATS: Greenhouse, Lever\n HRIS: Workday, BambooHR\n People Analytics: time to hire, turnover, headcount\n Power BI, Excel avanzado, SQL\n Onboarding y compensaciones\n Selección end-to-end\nEXPERIENCIA\nSenior Technical Recruiter — Novacomp (2021 - Actualidad)\n  Contraté 90+ perfiles tecnológicos; bajé el time to hire de 52 a 34 días.\n Dashboards de funnel en Power BI conectados a Greenhouse.\nHR An [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "HR02_Juan_Esteban_Castro",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 5.8,
+            "skills": [
+              "Tech recruiting (desarrollo",
+              "datos",
+              "QA)",
+              "Lever",
+              "BambooHR",
+              "time to hire",
+              "funnel",
+              "Excel avanzado (tablas dinámicas",
+              "macros)",
+              "Onboarding"
+            ],
+            "raw_text": "Juan Esteban Castro\nTechnical Recruiter\n<correo> · Medellín, Colombia\nPERFIL\nReclutador técnico con 4 años de experiencia en selección end-to-end y reportes de métricas con Excel\navanzado.\nHABILIDADES\n  Tech recruiting (desarrollo, datos, QA)\n ATS: Lever\n HRIS: BambooHR\n Métricas de RR.HH.: time to hire, funnel\n Excel avanzado (tablas dinámicas, macros)\n Onboarding\nEXPERIENCIA\nTechnical Recruiter — Endava (2022 - Actualidad)\n  Selección end-to-end de perfiles de software.\n Reportes mensuales de funnel en Excel.\nRecruiter — Adecco (<telefono>)\n  Reclutamiento masivo y administrativo.\nEDUCACIÓN\nAdministración de Empresas, EAFIT (2021)\nIDIOMAS\nEspañol nativo, Inglés B2",
+            "read_error": null
+          },
+          {
+            "candidate_id": "HR03_M_nica_Acosta",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 11.8,
+            "skills": [
+              "Nómina y compensaciones",
+              "Relaciones laborales y normativa",
+              "SAP SuccessFactors",
+              "Excel avanzado",
+              "Onboarding"
+            ],
+            "raw_text": "Mónica Acosta\nGeneralista de Recursos Humanos\n<correo> · Guayaquil, Ecuador\nPERFIL\nGeneralista con 9 años de experiencia en nómina, compensaciones y relaciones laborales. Sin\nexperiencia en reclutamiento técnico.\nHABILIDADES\n  Nómina y compensaciones\n Relaciones laborales y normativa\n HRIS: SAP SuccessFactors\n Excel avanzado\n Onboarding\nEXPERIENCIA\nJefa de RR.HH. — Industrias Ales (2018 - Actualidad)\n  Administración de nómina para 400 colaboradores.\n Estructuras salariales y onboarding.\nAnalista de RR.HH. — Pronaca (<telefono>)\n  Gestión administrativa de personal.\nEDUCACIÓN\nPsicología Industrial, Universidad Católica de Guayaquil (2015)\nIDIOMAS\nEspañol nativo, Ing [...]",
+            "read_error": null
+          },
+          {
+            "candidate_id": "HR04_Isabella_Le_n",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 3.8,
+            "skills": [
+              "Reclutamiento de perfiles IT",
+              "Workable",
+              "Excel intermedio",
+              "Entrevistas por competencias",
+              "Sourcing en LinkedIn"
+            ],
+            "raw_text": "Isabella León\nRecruiter\n<correo> · Bogotá, Colombia\nPERFIL\nReclutadora con 2 años de experiencia, orientada a perfiles tecnológicos. En crecimiento hacia analítica\nde personas.\nHABILIDADES\n  Reclutamiento de perfiles IT\n ATS: Workable\n Excel intermedio\n Entrevistas por competencias\n Sourcing en LinkedIn\nEXPERIENCIA\nRecruiter IT — Softtek (2024 - Actualidad)\n  Sourcing y entrevistas de desarrolladores.\n Seguimiento de candidatos en Workable.\nAsistente de Reclutamiento — Manpower (<telefono>)\n  Agendamiento y filtro de CVs.\nEDUCACIÓN\nPsicología, Universidad Javeriana (2023)\nIDIOMAS\nEspañol nativo, Inglés B2",
+            "read_error": null
+          },
+          {
+            "candidate_id": "HR05_Mart_n_Pe_a",
+            "vacancy_id": "VAC-AI-ENGINEER",
+            "years_experience": 5.8,
+            "skills": [
+              "Reclutamiento masivo (retail)",
+              "ATS básico (Kenexa)",
+              "Excel básico",
+              "Atención a candidatos"
+            ],
+            "raw_text": "Martín Peña\nReclutador de Retail\n<correo> · Lima, Perú\nPERFIL\nReclutador con 3 años de experiencia en retail. Sin experiencia en perfiles técnicos ni analítica de\npersonas.\nHABILIDADES\n  Reclutamiento masivo (retail)\n ATS básico (Kenexa)\n Excel básico\n Atención a candidatos\nEXPERIENCIA\nReclutador — Falabella Retail (2022 - Actualidad)\n  Reclutamiento masivo para tiendas.\n Registro de candidatos en el ATS corporativo.\nAsistente de RR.HH. — Ripley (<telefono>)\n  Apoyo administrativo.\nEDUCACIÓN\nAdministración, Universidad de Lima (2021)\nIDIOMAS\nEspañol nativo, Inglés A2",
+            "read_error": null
+          }
+        ]
+      },
+      "error": null,
+      "note": ""
+    },
+    {
+      "tool": "talent_acquisition_candidate_cv_list",
+      "args": {
+        "vacancy_id": "VAC-FULLSTACK-DEV"
+      },
+      "scorer": "typesafe",
+      "started_at": "2026-10-14T20:05:24.479280+00:00",
+      "duration_ms": 25,
+      "is_error": false,
+      "result": {
+        "result": [
+          {
+            "candidate_id": "AI01_Valentina_Rojas",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer AI01_Valentina_Rojas.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "AI02_Mateo_Cede_o",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer AI02_Mateo_Cede_o.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "AI03_Camila_Torres",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer AI03_Camila_Torres.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "AI04_Diego_Salazar",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer AI04_Diego_Salazar.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "AI05_Fernanda_Paredes",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer AI05_Fernanda_Paredes.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "CL01_Ricardo_Naranjo",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer CL01_Ricardo_Naranjo.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "CL02_Gabriela_Pazmi_o",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer CL02_Gabriela_Pazmi_o.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "CL03_Nicol_s_Serrano",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer CL03_Nicol_s_Serrano.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "CL04_Elena_C_rdenas",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer CL04_Elena_C_rdenas.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "CL05_Kevin_Zambrano",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer CL05_Kevin_Zambrano.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "FS01_Andr_s_Molina",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer FS01_Andr_s_Molina.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "FS02_Sof_a_Ben_tez",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer FS02_Sof_a_Ben_tez.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "FS03_Luis_Herrera",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer FS03_Luis_Herrera.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "FS04_Daniela_Vera",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer FS04_Daniela_Vera.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "FS05_Pablo_R_os",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer FS05_Pablo_R_os.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "HR01_Karla_Villac_s",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer HR01_Karla_Villac_s.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "HR02_Juan_Esteban_Castro",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer HR02_Juan_Esteban_Castro.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "HR03_M_nica_Acosta",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer HR03_M_nica_Acosta.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "HR04_Isabella_Le_n",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer HR04_Isabella_Le_n.pdf: el PDF esta danado"
+          },
+          {
+            "candidate_id": "HR05_Mart_n_Pe_a",
+            "vacancy_id": "VAC-FULLSTACK-DEV",
+            "years_experience": null,
+            "skills": [],
+            "raw_text": "",
+            "read_error": "No se pudo leer HR05_Mart_n_Pe_a.pdf: el PDF esta danado"
+          }
+        ]
+      },
+      "error": null,
+      "note": "archivos que no son PDF reales -> read_error"
+    }
+  ]
+}
