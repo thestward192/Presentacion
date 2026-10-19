@@ -1,23 +1,24 @@
-// Extractos de código REAL de talent_acquisition/. Los archivos .py se importan
+// Extractos de código REAL de talent_acquisition/ (copiado a ./source por
+// scripts/sync-traces.mjs). Los archivos .py se importan
 // tal cual (?raw) y se recortan por nombre de función o clase: nada se copia a
 // mano, y si una función cambia de nombre el build falla en vez de mentir.
 
-import folderAdapter from '../../../talent_acquisition/infrastructure/folder_source/folder_vacancy_source_adapter.py?raw';
-import textExtractor from '../../../talent_acquisition/infrastructure/text_extraction/document_text_extractor.py?raw';
-import cvParser from '../../../talent_acquisition/infrastructure/parsers/free_text_cv_parser.py?raw';
-import scorerPort from '../../../talent_acquisition/application/ports/candidate_match_scorer_port.py?raw';
-import sourcePort from '../../../talent_acquisition/application/ports/vacancy_source_port.py?raw';
-import evaluateMatch from '../../../talent_acquisition/application/use_cases/evaluate_candidate_match.py?raw';
-import rankCandidates from '../../../talent_acquisition/application/use_cases/rank_candidates.py?raw';
-import detectInconsistencies from '../../../talent_acquisition/application/use_cases/detect_cv_inconsistencies.py?raw';
-import screeningReport from '../../../talent_acquisition/application/use_cases/generate_screening_report.py?raw';
-import conversation from '../../../talent_acquisition/application/use_cases/build_prescreening_conversation.py?raw';
-import handoff from '../../../talent_acquisition/application/use_cases/generate_interview_handoff.py?raw';
-import domain from '../../../talent_acquisition/domain/prescreening.py?raw';
-import typesafeAdapter from '../../../talent_acquisition/infrastructure/scoring/typesafe_match_scorer_adapter.py?raw';
-import scorerFactory from '../../../talent_acquisition/infrastructure/scoring/match_scorer_factory.py?raw';
-import excelWriter from '../../../talent_acquisition/infrastructure/reports/excel_screening_report_writer.py?raw';
-import mcpTools from '../../../talent_acquisition/interfaces/mcp/tools.py?raw';
+import folderAdapter from './source/infrastructure/folder_source/folder_vacancy_source_adapter.py?raw';
+import textExtractor from './source/infrastructure/text_extraction/document_text_extractor.py?raw';
+import cvParser from './source/infrastructure/parsers/free_text_cv_parser.py?raw';
+import scorerPort from './source/application/ports/candidate_match_scorer_port.py?raw';
+import sourcePort from './source/application/ports/vacancy_source_port.py?raw';
+import evaluateMatch from './source/application/use_cases/evaluate_candidate_match.py?raw';
+import rankCandidates from './source/application/use_cases/rank_candidates.py?raw';
+import detectInconsistencies from './source/application/use_cases/detect_cv_inconsistencies.py?raw';
+import screeningReport from './source/application/use_cases/generate_screening_report.py?raw';
+import conversation from './source/application/use_cases/build_prescreening_conversation.py?raw';
+import handoff from './source/application/use_cases/generate_interview_handoff.py?raw';
+import domain from './source/domain/prescreening.py?raw';
+import typesafeAdapter from './source/infrastructure/scoring/typesafe_match_scorer_adapter.py?raw';
+import scorerFactory from './source/infrastructure/scoring/match_scorer_factory.py?raw';
+import excelWriter from './source/infrastructure/reports/excel_screening_report_writer.py?raw';
+import mcpTools from './source/interfaces/mcp/tools.py?raw';
 
 const FILES = {
   'infrastructure/folder_source/folder_vacancy_source_adapter.py': folderAdapter,
