@@ -13,6 +13,7 @@ import { heroSlide } from './components/layout';
 import { createDeck } from './core/deck';
 import { h } from './core/dom';
 import { setCandidateNames } from './core/names';
+import { initLive } from './core/live';
 import { initTheme } from './core/theme';
 import { findEvent, loadTraces } from './core/trace-loader';
 import { readXlsx } from './core/xlsx';
@@ -45,7 +46,7 @@ async function start(): Promise<void> {
 
     // Presentación corta: cómo es el proyecto, cómo lo trabajamos y una
     // animación demostrativa por herramienta.
-    createDeck(main, [
+    const deck = createDeck(main, [
       {
         id: 'introduccion',
         title: 'El proyecto',
@@ -111,6 +112,8 @@ async function start(): Promise<void> {
         slides: [howExcel(traces, excel), thanks(traces)],
       },
     ]);
+    // Los tres presentadores comparten la misma presentación en vivo.
+    initLive(deck);
   } catch (error) {
     console.error(error);
     main.replaceChildren(

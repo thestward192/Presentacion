@@ -63,6 +63,26 @@ function countUp(el: HTMLElement, on: boolean): void {
   requestAnimationFrame(tick);
 }
 
+/** Control de una animación desde afuera (presentación compartida en vivo). */
+export interface BuildControl {
+  step(): number;
+  set(step: number): void;
+}
+
+const controls = new Map<HTMLElement, BuildControl>();
+const stepListeners: ((root: HTMLElement, step: number) => void)[] = [];
+
+/** La animación por pasos dentro de un bloque, si tiene una. */
+export function buildIn(scope: Element): BuildControl | undefined {
+  for (const [root, control] of controls) if (scope.contains(root)) return control;
+  return undefined;
+}
+
+/** Avisa cada vez que alguien avanza o retrocede una animación (no los reinicios automáticos). */
+export function onBuildStep(listener: (root: HTMLElement, step: number) => void): void {
+  stepListeners.push(listener);
+}
+
 export function buildAnim(o: BuildOptions): HTMLElement {
   const total = o.steps.length;
   const pieces = o.steps.map((step, i) =>
@@ -96,7 +116,7 @@ export function buildAnim(o: BuildOptions): HTMLElement {
   const root = h('div.build', { 'data-at': 0 }, scene, bar);
   let current = 0;
 
-  function go(target: number): void {
+  function go(target: number, notify = true): void {
     current = Math.max(0, Math.min(total, target));
     root.dataset.at = String(current);
     root.classList.toggle('is-started', current > 0);
@@ -139,14 +159,16 @@ export function buildAnim(o: BuildOptions): HTMLElement {
     next.textContent = current === 0 ? 'Empezar' : current === total ? 'Volver al inicio' : 'Siguiente';
     o.onStep?.(current, root);
     root.dispatchEvent(new CustomEvent('content:change', { bubbles: true }));
+    if (notify) stepListeners.forEach((listener) => listener(root, current));
   }
 
   prev.addEventListener('click', () => go(current - 1));
   next.addEventListener('click', () => go(current === total ? 0 : current + 1));
   document.addEventListener('slide:leave', (event) => {
-    if ((event.target as Element).contains(root)) window.setTimeout(() => go(0), 900);
+    if ((event.target as Element).contains(root)) window.setTimeout(() => go(0, false), 900);
   });
   // Primer dibujo cuando el árbol ya está armado (onStep puede buscar nodos).
-  queueMicrotask(() => go(0));
+  queueMicrotask(() => go(0, false));
+  controls.set(root, { step: () => current, set: (step) => go(step, false) });
   return root;
 }

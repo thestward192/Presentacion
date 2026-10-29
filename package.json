@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@types/three": "^0.170.0",
+    "mqtt": "^5.10.1",
     "three": "^0.170.0"
   }
 }

@@ -21,7 +21,18 @@ interface Position {
 const TRANSITION_MS = 850;
 const MIN_ZOOM = 0.72;
 
-export function createDeck(root: HTMLElement, pages: Page[]): void {
+/** Control del mazo desde afuera (presentación compartida en vivo). */
+export interface DeckControl {
+  current(): number;
+  /** Ir a un bloque sin avisar a los oyentes (el cambio vino de otro presentador). */
+  show(index: number): void;
+  slideAt(index: number): HTMLElement | undefined;
+  /** Avisa cada vez que alguien cambia de bloque en esta pantalla. */
+  onNavigate(listener: (index: number) => void): void;
+}
+
+export function createDeck(root: HTMLElement, pages: Page[]): DeckControl {
+  const listeners: ((index: number) => void)[] = [];
   const flat = pages.flatMap((page, p) => page.slides.map((el, s) => ({ el, page: p, slide: s })));
   let current = -1;
   let busyUntil = 0;
@@ -69,7 +80,7 @@ export function createDeck(root: HTMLElement, pages: Page[]): void {
   const fitAll = () => flat.forEach(({ el }) => fit(el));
 
   // -- Navegación -----------------------------------------------------------
-  function go(target: number, instant = false): void {
+  function go(target: number, instant = false, notify = true): void {
     if (target < 0 || target >= flat.length || target === current) return;
     const previous = current;
     current = target;
@@ -117,6 +128,7 @@ export function createDeck(root: HTMLElement, pages: Page[]): void {
     document.querySelector('.deck-down')?.toggleAttribute('disabled', current === flat.length - 1);
 
     history.replaceState(null, '', `#${pages[page].id}/${slide + 1}`);
+    if (notify) listeners.forEach((listener) => listener(current));
   }
 
   const next = () => go(current + 1);
@@ -234,5 +246,12 @@ export function createDeck(root: HTMLElement, pages: Page[]): void {
   const startPage = Math.max(0, pages.findIndex((page) => page.id === pageId));
   const start = indexOf({ page: startPage, slide: Math.max(0, Number(number || 1) - 1) });
   document.documentElement.classList.toggle('reduced-motion', prefersReducedMotion());
-  go(start === -1 ? 0 : start, true);
+  go(start === -1 ? 0 : start, true, false);
+
+  return {
+    current: () => current,
+    show: (index) => go(index, false, false),
+    slideAt: (index) => flat[index]?.el,
+    onNavigate: (listener) => listeners.push(listener),
+  };
 }

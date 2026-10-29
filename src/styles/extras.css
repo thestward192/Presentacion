@@ -115,3 +115,80 @@
   margin: -14px 0 0 -14px;
   background: color-mix(in srgb, var(--accent) 22%, transparent);
 }
+
+/* ==================================================================== */
+/* En vivo: presentación compartida entre los presentadores               */
+/* ==================================================================== */
+
+.live-toggle {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 12px 0 10px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  background: var(--glass);
+  font-size: 0.82rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color 250ms ease, background-color 250ms ease;
+}
+.live-toggle:hover {
+  border-color: var(--border-strong);
+}
+.live-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-3);
+}
+.live-toggle[data-status='live'] {
+  border-color: var(--ok-line);
+  color: var(--ok-fg);
+  font-weight: 600;
+}
+.live-toggle[data-status='live'] .live-dot {
+  background: var(--ok-fg);
+}
+.live-toggle[data-status='live'] .live-dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid var(--ok-fg);
+  animation: live-pulse 1.8s ease-out infinite;
+}
+@keyframes live-pulse {
+  from {
+    opacity: 0.7;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+.live-toggle[data-status='connecting'] .live-dot {
+  background: var(--warn-fg);
+  animation: live-blink 1s ease-in-out infinite alternate;
+}
+@keyframes live-blink {
+  to {
+    opacity: 0.3;
+  }
+}
+.live-toggle[data-status='error'] {
+  color: var(--bad-fg);
+}
+.live-toggle[data-status='error'] .live-dot {
+  background: var(--bad-fg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .live-dot::after,
+  .live-dot {
+    animation: none !important;
+  }
+}
